@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "skills": {
+    "paths": [".opencode/skills"]
+  },
+  "agent": {
+    "react-reviewer": {
+      "description": "Reviews React components for best practices, hook rules, performance, and accessibility.",
+      "mode": "subagent",
+      "permission": { "edit": "deny", "bash": "deny" }
+    },
+    "design-reviewer": {
+      "description": "Reviews UI design for anti-patterns, contrast, typography, and layout consistency.",
+      "mode": "subagent",
+      "permission": { "edit": "deny", "bash": "deny" }
+    },
+    "resume-builder": {
+      "description": "Helps build, improve, and format resume content with ATS-friendly structure.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "bash": "ask" }
+    }
+  }
+}
